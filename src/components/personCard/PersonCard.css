@@ -1,0 +1,91 @@
+.person-card {
+  height: 200px;
+  width: 450px;
+  overflow: hidden;
+  border-radius: .5rem;
+  /* border: 1px solid rgba(0, 0, 0, .2); */
+  background: hsla(240, 100%, 99%, 1);
+  display: flex;
+  border: 1.5px solid var(--textColor);
+  padding: 5px;
+}
+
+.personcard-image {
+  position: relative;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  /* border-radius: 0 20px 0 0; */
+  border-radius: .5rem;
+}
+
+.personcard-image > img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.personcard-image > p {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 0;
+  font-size: .8rem;
+  color: #fff;
+  background: rgba(0, 0, 0, .3);
+  border-radius: .4rem;
+  padding: .3rem .7rem;
+  font-weight: 500;
+  margin: 0 0.3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.personcard-data {
+  margin-left: 2px;
+  position: relative;
+}
+
+.personcard-data > p {
+  color: hsla(0, 0%, 0%, 1);
+  /* font-size: .8rem; */
+  /* margin-right: .3rem; */
+  /* border-radius: .3rem; */
+  text-align: left;
+  padding: 2px 8px;
+  /* background: hsl(225, 22%, 93%); */
+  margin: 10.5px 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+
+.personcard-data > p > span {
+  color:  hsla(0, 0%, 40%, 1);
+  font-family: 'Roboto', sans-serif;
+  font-size: 13.5px;
+  font-weight: 300;
+}
+
+.personcard-data > a {
+  text-decoration: none;
+  background: var(--altColor);
+  color: hsla(0, 0%, 100%, 1);
+  padding: 5.5px 18px;
+  padding-bottom: 7px;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+}
+
+.personcard-data > a:hover {
+  background: hsla(0, 0%, 100%, 1);
+  color: var(--altColor);
+  border: 1px solid var(--altColor);
+  transition: .5s;
+}
